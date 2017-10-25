@@ -428,10 +428,6 @@ class Shortcode_UI {
 			define( 'SHORTCODE_UI_DOING_PREVIEW', true );
 		}
 
-		if ( ! current_user_can( 'edit_post', $post_id ) ) {
-			return esc_html__( "Something's rotten in the state of Denmark", 'shortcode-ui' );
-		}
-
 		if ( ! empty( $post_id ) ) {
 			// @codingStandardsIgnoreStart
 			global $post;
